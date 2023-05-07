@@ -1,0 +1,3 @@
+string="AaAaAa"
+print("number of occurances of a:",string.count("a"))
+
