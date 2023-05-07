@@ -1,0 +1,4 @@
+num1=int(input("enter the num1: "))
+num2=int(input("enter tne num2: "))
+
+print(num1 if(num1>=num2) else num2)
