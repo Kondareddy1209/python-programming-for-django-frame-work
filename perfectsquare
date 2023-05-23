@@ -1,0 +1,11 @@
+import math
+a=int(input("enter a number"))
+n=math.sqrt(a)
+print(n)
+t=n*10
+if t%10==0:
+    print("perfect square")
+else:
+    print("not perfect square")
+
+    
