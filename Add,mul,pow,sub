@@ -1,0 +1,56 @@
+def power(x, n):
+    return x ** n
+
+def add(x, n):
+    return x + n
+
+def subtract(x, n):
+    return x - n
+
+def multiply(x, n):
+    return x * n
+
+def divide(x, n):
+    if n != 0:
+        return x / n
+    else:
+        print("Error: Division by zero")
+        return None
+
+
+x = float(input("Enter the value of x: "))
+n = float(input("Enter the value of n: "))
+
+
+print("Select an operation:")
+print("1. Power")
+print("2. Add")
+print("3. Subtract")
+print("4. Multiply")
+print("5. Divide")
+
+choice = int(input("Enter your choice (1-5): "))
+
+# Perform the selected operation
+if choice == 1:
+    result = power(x, n)
+    operation = "Power"
+elif choice == 2:
+    result = add(x, n)
+    operation = "Addition"
+elif choice == 3:
+    result = subtract(x, n)
+    operation = "Subtraction"
+elif choice == 4:
+    result = multiply(x, n)
+    operation = "Multiplication"
+elif choice == 5:
+    result = divide(x, n)
+    operation = "Division"
+else:
+    print("Invalid choice")
+    exit()
+
+
+if result is not None:
+    print("Result of {} operation: {}".format(operation, result))
