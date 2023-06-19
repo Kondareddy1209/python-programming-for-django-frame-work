@@ -1,0 +1,8 @@
+def print_pyramid(numbers):
+    length=len(numbers)
+    for i in range(length):
+        spaces=" " *(length- i - 1)
+        letters=" ".join(numbers[:i+1])
+        print(spaces+letters)
+numbers="12345"
+print_pyramid(numbers)
